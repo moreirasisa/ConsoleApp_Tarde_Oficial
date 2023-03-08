@@ -18,5 +18,17 @@ namespace ConsoleApp_Tarde
             Descricao = descricao;
             Valor = valor;
         }
+        public string getId()
+        {
+            return "\tCódigo: " + Id;
+        }
+        public string getDescricao()
+        {
+            return "\tDescrição: " + Descricao;
+        }
+        public string getValor()
+        {
+            return "\tValor em R$: " + Valor;
+        }
     }
 }
