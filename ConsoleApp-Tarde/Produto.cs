@@ -18,17 +18,34 @@ namespace ConsoleApp_Tarde
             Descricao = descricao;
             Valor = valor;
         }
-        public string getId()
+        public int getId()
         {
-            return "\tCódigo: " + Id;
+            return Id;
         }
+        public void setId(int id)
+        {
+            Id = id;
+        }
+
         public string getDescricao()
         {
-            return "\tDescrição: " + Descricao;
+            return Descricao;
         }
-        public string getValor()
+        public void setDescricao(string descricao)
         {
-            return "\tValor em R$: " + Valor;
+            Descricao = descricao;
+        }
+
+        public decimal getValor()
+        {
+            return Valor;
+        }
+        public void setValor(decimal valor)
+        {
+            if (valor > 0)
+            {
+                Valor = valor;
+            }
         }
     }
 }
