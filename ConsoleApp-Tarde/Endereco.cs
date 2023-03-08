@@ -72,7 +72,7 @@ namespace ConsoleApp_Tarde
 
         public string getCidade()
         {
-            return cidade;
+            return Cidade;
         }
         public void setCidade(string cidade)
         {
