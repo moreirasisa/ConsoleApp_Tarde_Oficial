@@ -18,6 +18,12 @@ namespace ConsoleApp_Tarde
             Descricao = descricao;
             Valor = valor;
         }
+
+        public string ExibeDadosProduto()
+        {
+            return Descricao + " " + Valor;
+        }
+
         public int getId()
         {
             return Id;
