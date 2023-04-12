@@ -1,0 +1,60 @@
+﻿<div class="card">
+    <div class="card-header">
+        Lista de Produtos
+    </div>
+    <h1>MURILO</h1>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-2">
+                <a href="/produtos/cadastro" class="btn btn-success">Cadastrar novo Produto</a>
+            </div>
+            <div class="col-3">
+                <select name="filtro" class="form-control">
+                    <option value="0">Todos os produtos</option>
+                    <option value="id">Por código</option>
+                    <option value="preco">Por preço</option>
+                </select>
+            </div>
+            <div class="col-5">
+                <input type="text" name="busca" class="form-control" />
+            </div>
+            <div class="col-2">
+                <button class="btn btn-primary" type="submit">
+                    Pesquisar
+                </button>
+            </div>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mouse</td>
+                    <td>R$ 200,00</td>
+                    <td>
+                        <a href="/clientes/editar/1" class="btn btn-warning">Editar</a>
+                        <a href="/clientes/excluir/1" class="btn btn-danger">Excluir</a>
+                        <a href="/clientes/compras/1" class="btn btn-info">Lista de compras</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Teclado</td>
+                    <td>R$ 570,00</td>
+                    <td>
+                        <a href="/clientes/editar/1" class="btn btn-warning">Editar</a>
+                        <a href="/clientes/excluir/1" class="btn btn-danger">Excluir</a>
+                        <a href="/clientes/compras/1" class="btn btn-info">Lista de compras</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
